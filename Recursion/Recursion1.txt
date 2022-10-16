@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int factorial(int n){
+    if(n==0)      // Base case
+    return 1;     // Base case
+    
+    int smallOutput= factorial(n-1);  // Step 2  (Assume it is working for n-1)
+   
+    return n*smallOutput;    // Step 3     (Code for last step)     
+}
+
+
+int main(){
+    int n;
+    cin>>n;
+    int output= factorial(n);
+    cout<<output<<endl;
+}

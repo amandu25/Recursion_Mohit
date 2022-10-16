@@ -1,0 +1,111 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+//Multiplication
+// int multiply(int a, int b){
+//     if(a==0 || b==0)
+//     return 0;
+    
+//     int smallerOutput= multiply(a,b-1);
+//     return smallerOutput+a;
+// }
+
+// int main(){
+//     int a=10,b=20;
+//     cout<<multiply(a,b);
+// }
+
+
+//Count Zeroes
+// int solve(int n){
+//     int count=0;
+//     if(n==0)
+//     return count;
+
+//     if(n%10==0)
+//     count++;
+    
+//     int smallerOutput=solve(n/10);
+    
+//     return smallerOutput+count;
+// }
+
+// int countZeroes(int n){
+//     if(n==0)
+//     return 1;
+//     return solve(n);
+// }
+
+// int main(){
+//     int n=10030203;
+//     cout<<countZeroes(n);
+// }
+
+
+//Geometric Sum
+// double geometricSum(int k){
+//     if(k==0)
+//     return 1;
+    
+//     double smallerOutput= geometricSum(k-1);
+    
+//     return smallerOutput+ 1/pow(2,k);
+    
+// }
+
+// int main(){
+//     cout<<geometricSum(3);
+// }
+
+//Sum of digits
+// int sum=0;
+// int sumOfDigits(int n){
+    
+//     if(n==0)
+//     return sum;
+    
+//     int sum= n%10;
+//     int smallerOutput= sumOfDigits(n/10);
+    
+//     return smallerOutput+sum;
+    
+// }
+
+// int main(){
+//     int n= 12346;
+//     cout<<sumOfDigits(n);
+// }
+
+//Check Palindrome
+// int i=0;
+// int length(char input[]){
+//     int count=0;
+//     for(int i=0;input[i]!='\0';i++)
+//     count++;
+//     return count;
+// } 
+
+// bool checkPalindrome(char input[]){
+//     int size = length(input);
+//     if(i>=size/2)
+//     return true;
+    
+//     if(input[i]!=input[size-1-i])
+//     return false;
+    
+//     i++;
+//     return checkPalindrome(input);
+// }
+
+// int main() {
+//     char input[50];
+//     cin >> input;
+    
+//     if(checkPalindrome(input)) {
+//         cout << "true" << endl;
+//     }
+//     else {
+//         cout << "false" << endl;
+//     }
+// }
